@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:id="@+id/cardview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    android:elevation="100dp"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/list_item_deviceicon"
+            android:src="@drawable/ic_android_black"
+            android:layout_alignParentLeft="true"
+            android:alpha="0.70"
+            android:layout_alignBottom="@+id/list_item_devicestatus"
+            android:layout_alignTop="@+id/list_item_devicename" />
+
+        <TextView
+            android:id="@+id/list_item_devicename"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Name"
+            android:layout_alignParentTop="true"
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_toRightOf="@+id/list_item_deviceicon" />
+
+        <TextView
+            android:id="@+id/list_item_deviceaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_below="@+id/list_item_devicename"
+            android:layout_alignLeft="@+id/list_item_devicename" />
+
+        <TextView
+            android:id="@+id/list_item_devicestatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="New Text"
+            android:layout_below="@+id/list_item_deviceaddress"
+            android:layout_alignLeft="@+id/list_item_deviceaddress" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/list_item_devicechecked"
+            android:src="@drawable/ic_action_selected"
+            android:layout_alignParentRight="true"
+            android:alpha="0.70"
+            android:layout_alignBottom="@+id/list_item_devicestatus"
+            android:layout_alignTop="@+id/list_item_devicename" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
